@@ -1,0 +1,216 @@
+*{
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /*border-box defines that the border should be included in the width and height of an element not outside of it*/ 
+  
+}
+.navbar{
+    display: flex; /*flex means it will be in a row but if we use flex-direction: column; then it will be in a column*/
+    align-items: center;
+    margin-top: 0px;
+    background-color:#131921;
+    height: 60px; /*height of the navbar*/
+    color: white; /*color of the text in the navbar*/
+    justify-content: space-evenly;
+
+}
+.nav-logo{
+    /* margin: 1px; */
+    /* padding-top: 1px 8px 0px 6px; */
+    padding-left: 10px;
+    height: 50px; /*height of the outer div of logo div*/
+    width: 113px; /*width of the outer div of logo div*/
+    /* box-sizing: border-box; */
+}
+.logo{
+    
+    background-image:url('img/amazon_logo.png') ;
+    /*image will not show until we define the height and width of outer div*/
+    background-size: cover; /*cover means image will cover the whole div*/
+    height: 48px;
+    width: 100%;
+}
+
+.border{
+    border: 2px solid transparent; /* transparent means border will be invisible until we hover which is defined hover border below*/
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/* .nav-address{
+    display: flex;
+    margin: 5px 2px 5px 0;
+    padding: 0px 9px;
+    width: 112px;
+    height: 50px;
+}
+
+.location-icon{
+    margin-top: 8px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+}
+.add-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:3px;
+    width: 76px;
+    height: 30px;
+   
+}
+.add-to{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.add-country{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: bold;
+} */
+
+/*  address deliver section */
+.nav-address{
+ 
+    height: 50px; 
+    width: 113px; 
+    margin-left: 5px;
+    padding: 0px 9px;
+}
+.add-first{
+    padding-top: 7px;
+    color: #cccccc;
+    /* font-size: 12px; */
+    font-size: 0.8rem; /* 1 rem = 16px */
+    margin-left: 15px;
+
+}
+.add-icon{
+    
+    display: flex;
+    gap: 1.5px;
+    
+}
+.add-second{
+    font-size: .95rem;
+
+}
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly; /*space-evenly means equal space between the elements*/
+    background-color:#F3A847;
+    width: 60%;
+    height: 42px;
+    
+    border-radius: 0 4px 4px 0;
+    border: none;
+}
+
+.nav-search:hover{
+     
+    border: 2px solid #F3A847;
+}
+.search-select{
+    background-color: #EFEFEF;
+    width: 52px;
+    text-align: center;
+    /* border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; */
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+.search-input{
+    width: 100%; /*100% of the parent div | the remaining space  after containing  select and search icon  will be occupied by the search input field*/
+    font-size: 1rem;
+     font-family: #e4ffff;
+     border: none;
+}
+.search-icon{
+    width: 45px;
+
+    display: flex;
+    justify-content: center; /* horizontally center the icon when flex-direction is row */
+    align-items: center; /* vertically (upor niche same space) center the icon when flex-direction is row */
+    font-size: 1.3rem; /* icon er size */
+    color: black;  /* icon er color */
+}
+
+.nav-lang{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.lang-select{
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    gap: 1px;
+    width: 40px;
+}
+.dropdown{
+ 
+    margin-top: 5px;
+    height: 10px;
+    width: 14px;
+}
+ 
+.nav-signin, .nav-returns{
+    margin-left: 6px;
+    padding: 10px 9px 10px;
+    align-items: center;
+
+    
+ }
+.font-12{
+    font-size: 12px; /* 1 rem = 16px */
+    
+}
+.font-14-bold{
+    font-size: 14px;  
+    font-weight: bold;
+}   
+
+.nav-cart {
+    /* display: flex; */
+    margin: 0px 10px 0px 10px;
+    padding: 5px 9px 9px;
+
+}
+.nav-cart i{
+    font-size: 35px;
+    color: #f5ffed;
+}
+.panel{
+    display: flex;
+    height: 40px;
+    background-color: #232F3E;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops{
+   width: 95%;
+   
+   /* gap: 20px; */
+}
+.panel-ops p{
+    display: inline;
+    font-size: 14px;
+    margin-left: 15px;  /* gap  doesn't work for tag p but it works for div */
+    /* difference between inline and flex is that inline will not take the whole width of the parent div */
+   
+}
+
+/** Hero section */
+.hero-section{
+   background-image: url('img/hero_image.jpg');
+   height: 600px;
+    background-size: cover;
+}
