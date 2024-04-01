@@ -16,6 +16,24 @@
     justify-content: space-evenly;
 
 }
+.nav-user{
+    /* background-color: #0a3e0a; */
+    /* margin: 1px; */
+    /* padding-top: 1px 8px 0px 6px; */
+    padding-left: 4px;
+    height: 50px; /*height of the outer div of logo div*/
+    width: 50px; /*width of the outer div of logo div*/
+    margin:5px 0 0 0 ;
+}
+.user{
+    background-image:url('img/user.jpg') ;
+    /*image will not show until we define the height and width of outer div*/
+    background-size: cover; /*cover means image will cover the whole div*/
+    height: 45px;
+    width: 100%;
+    border-radius: 50%; /*border-radius: 50% means it will be a circle*/
+    ;
+}
 .nav-logo{
     /* margin: 1px; */
     /* padding-top: 1px 8px 0px 6px; */
@@ -102,6 +120,7 @@
 
 .nav-search{
     display: flex;
+    margin: 0 20px;
     justify-content: space-evenly; /*space-evenly means equal space between the elements*/
     background-color:#F3A847;
     width: 60%;
@@ -201,13 +220,28 @@
    /* gap: 20px; */
 }
 .panel-ops p{
+    padding: 10px 3px 10px 3px;
     display: inline;
     font-size: 14px;
     margin-left: 15px;  /* gap  doesn't work for tag p but it works for div */
     /* difference between inline and flex is that inline will not take the whole width of the parent div */
    
 }
+.panel-ops a{
+    color: #e8e8e8;
+     
+    text-decoration: none;
+    font-weight: bold;
 
+}
+.panel-all {
+    padding: 6px 12px 6px 5px;
+}
+.panel-all a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
 /** Hero section */
 .hero-section{
    background-image: url('img/hero_image.jpg');
@@ -250,7 +284,7 @@
     height: 100px;
     /* border: 2px solid black; */
     width:23%;
-    height: 400px;
+    height: 420px;
     background-color: white;
     color: black;
     padding: 20px 0px 15px;
@@ -264,6 +298,103 @@
 }
 .box-content{
     
-    margin: 0px 1rem; /* top and bottom 1rem and left right 0 */
+    margin: 0px 1.1rem; /* top and bottom 0rem and left right 1rem */
 
+}
+.box-content p{
+    /* make the text at the end of div */
+    color:#007185;
+    margin-bottom: 15px;
+ }
+
+ .foot-panel1{
+    background-color: #37475A; /* A and a both are same in css */
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    
+}
+footer{   /*footer is a tag */
+    margin-top: 15px;
+}
+/* .foot-panel2 inside ul and li access and make style on ther */
+.foot-panel2{
+    
+    background-color: #232F3E;
+    
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; /*remove the bullet points from the list*/
+    padding: 0;
+    text-decoration: none;
+}
+
+.foot-panel2 ul{
+    padding: 50px;
+    
+    list-style-type: none; /*remove the bullet points from the list*/
+}
+
+/*access nested element in css like div then go ul then li and make style on li */
+.foot-panel2 li {
+    /* make a gap 10 px for each li itmes  */
+    margin: 12px; /* 12px gap between each li */
+    
+    /* list-style: none; */
+     
+}
+/* access first li and give styel on that li as a heading and bold */
+ .foot-panel2 li:first-child{
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+.foot-panel2 li a{
+    color: #DDDDDD;;
+    text-decoration: none;
+     
+}
+
+.foot-panel3{
+    border-top: 1px solid rgb(101, 101, 101);
+    background-color: #222f3d;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    background-image: url('img/amazon_logo.png');
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+}
+.foot-panel4{
+    background-color: #131A22;
+    color: white;
+    /* display: flex; */
+    height: 100px;
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+
+}
+.pages{
+    padding-top: 10px;
+}
+.copy-right{
+    margin-top: 5px;
+}
+
+.foot-panel4 a{
+    color: white;
+    text-decoration: none;
 }
